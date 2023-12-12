@@ -1,0 +1,50 @@
+{
+  "name": "@lifi/wallet-management",
+  "version": "2.4.1",
+  "description": "LI.FI Wallet Management solution.",
+  "sideEffects": false,
+  "main": "./cjs/index.js",
+  "module": "./index.js",
+  "types": "./index.d.ts",
+  "lint-staged": {
+    "src/**/*.{ts,tsx}": [
+      "yarn run lint:fix",
+      "yarn run prettier:fix"
+    ]
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "Adrian Weniger <adrian@li.finance>",
+  "homepage": "https://github.com/lifinance/wallet-management",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/lifinance/wallet-management.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lifinance/wallet-management/issues"
+  },
+  "license": "Apache-2.0",
+  "keywords": [
+    "wallet",
+    "wallet-management",
+    "metamask",
+    "wallet-connect",
+    "coinbase",
+    "eip1193",
+    "ethereum",
+    "ENS",
+    "web3",
+    "blockchain",
+    "lifi"
+  ],
+  "dependencies": {
+    "@lifi/sdk": "^3.0.0-alpha.34",
+    "react": "^18.2.0",
+    "wagmi": "^2.0.0-beta.5"
+  },
+  "eslintConfig": {
+    "extends": "../../.eslintrc"
+  },
+  "private": false
+}
